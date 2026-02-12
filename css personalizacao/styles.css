@@ -1,27 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Story+Script&display=swap%27');
-
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
 :root {
     --roxo-claro: #6D76A6;
     --roxo-escuro: #1b1f5e;
     --bege: #d9bd8b; 
     --roxo: #732257;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
- 
+
 body {
-    background-color: var(--bege);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--bege);
 }
 
-main {
-    flex: 1;
-}
 
 .navbar {
     display: flex;
@@ -110,7 +107,6 @@ main {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    columns: 2;
     font-family: 'Story Script', sans-serif;
 }
  
@@ -138,10 +134,8 @@ main {
     align-items: center;
 }
 
-.box-sabores, label {
+.box-sabores label {
     text-align: center;
-    justify-content: space-around;
-    display: flow-root;
 }
  
 /* Concluir */
@@ -163,6 +157,7 @@ main {
 /* FOOTER */
 footer {
     background-color: var(--roxo);
+    margin-top: 60px;
     padding: 15px 30px;
     font-family: 'Story Script';
 }
@@ -192,6 +187,36 @@ footer .icons a {
  
 /* --- RESPONSIVIDADE --- */
 @media (max-width: 768px) {
+    
+    .menu-icon {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--bege);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 15px;
+        z-index: 1000;
+    }
+
+    #menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+
+    footer .content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
     
     .menu-icon {
         display: block;
