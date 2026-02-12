@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&family=Story+Script&display=swap'); 
+:root { 
+  --roxo-claro: #6D76A6; 
+  --roxo-escuro: #1b1f5e; 
+  --bege: #d9bd8b; 
+  --roxo: #732257; 
+  --branco: #fff;
+} 
+  
+* { 
+  margin: 0; 
+  box-sizing: border-box;
+  
+}
+
+body { 
+  background-color: var(--bege);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+} 
+
+.navbar { 
+  display: flex; 
+  align-items: center; 
+  padding: 15px 40px; gap: 40px; 
+  position: relative; 
+  font-family: 'Story Script', cursive; 
+} 
+
+.menu { 
+  margin-right: auto;
+} 
+  
+.menu { 
+  display: flex; 
+  gap: 30px; 
+  list-style: none; 
+  } 
+    
+.menu li a { 
+  text-decoration: none; 
+  color: var(--roxo-escuro); 
+  font-weight: 560; 
+  font-size: 20px;
+} 
+.menu-icon { 
+  display: none; 
+  font-size: 34px; 
+  color: var(--roxo-escuro); 
+  cursor: pointer; 
+} 
+
+#menu-toggle { 
+  display: none;
+} 
+
+.linha-menu { 
+  display: flex; 
+  align-items: center; 
+} 
+
+.linha-menu span { 
+  height: 10px; 
+  flex: 2; 
+} 
+
+.linha-esq { 
+  background-color: var(--roxo); 
+  border-radius: 4px; 
+} 
+
+.linha-dir { 
+  background-color: var(--roxo-claro); 
+  border-radius: 4px; 
+} 
+
+.logo-menu { 
+  width: 170px; 
+} 
+
+/* TELA DE PAGAMENTO */ 
+.container { 
+  max-width: 800px; 
+  margin: 40px auto;
+  padding: 0 20px;
+} 
+
+.card { 
+  text-align: center; 
+  margin-bottom: 30px; 
+} 
+
+.card h2 { 
+  background-color: var(--roxo-escuro); 
+  color: #fff; 
+  display: inline-block; 
+  padding: 6px 20px; 
+  border-radius: 20px; 
+  margin-bottom: 20px; 
+  font-family: 'Story Script',sans-serif; 
+} 
+
+.radio-group { 
+  display: flex; 
+  justify-content: center; 
+  gap: 30px; 
+  margin-bottom: 15px; 
+  font-family: 'Story Script', sans-serif; 
+} 
+
+.btn-1 { 
+  width: 100%; 
+  max-width: 400px; 
+  padding: 8px; 
+  margin: 8px auto; 
+  display: block; 
+  border-radius: 10px; 
+  border: none; 
+  font-family: 'Sriracha', cursive; 
+  font-weight: 25px; 
+} 
+
+.input { 
+  width: 100%; 
+  max-width: 400px; 
+  padding: 8px; 
+  margin: 8px auto; 
+  display: block; 
+  border-radius: 10px; 
+  border: none; 
+} 
+
+.btn { 
+  background-color: var(--roxo-escuro); 
+  color: #fff; 
+  border: none; 
+  padding: 8px 18px; 
+  border-radius: 15px; 
+  cursor: pointer;
+  margin-top: 10px; 
+  font-family: 'Story Script', sans-serif; 
+} 
+
+hr { 
+  margin: 40px 0; 
+  border: 1px solid #000; 
+} 
+
+.total-box { 
+  background-color: var(--roxo-escuro); 
+  padding: 20px; 
+  text-align: center; 
+  border-radius: 10px; 
+} 
+
+.total-box span { 
+  color: #fff; 
+  display: block; 
+  margin-bottom: 10px; 
+  font-family: 'Sriracha', sans-serif;
+}
+
+.btn-confirm { 
+  background-color: #fff; 
+  color: #000; 
+} 
+
+/* FOOTER */ 
+footer { 
+  background-color: var(--roxo); 
+  padding: 15px 30px;
+} 
+
+footer .content { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  color: var(--bege); 
+  font-family: 'Story Script', cursive; 
+  gap: 20px; 
+  font-size: 19px;
+
+} 
+
+footer img { 
+  width: 90px; 
+} 
+
+footer .icons { 
+  display: flex; 
+  gap: 30px; 
+  font-size: 20px; 
+} 
+
+/* RESPONSIVO */ 
+@media (max-width: 768px) { 
+  .nav { 
+    flex-direction: column; 
+    gap: 15px; 
+  } 
+  .menu-icon { 
+    display: block; 
+  } 
+  .menu { 
+    display: none; 
+    position: absolute; 
+    top: 70px; 
+    left: 0; 
+    width: 100%; 
+    background-color: var(--bege); 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px 0; 
+    gap: 15px; 
+    z-index: 1000; 
+  } 
+  .menu { 
+    flex-wrap: wrap; 
+    justify-content: center; 
+  } 
+  #menu-toggle:checked ~ .menu { 
+    display: flex; 
+  } 
+    footer .content { 
+    flex-direction: column; 
+    text-align: center; 
+    gap: 10px;
+   
+  } 
+}
+ 

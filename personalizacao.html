@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Personalização</title>
+    <link rel="stylesheet" href="./css personalizacao/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Zh04..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ 
+    <header>
+        <nav class="navbar">
+            <input type="checkbox" id="menu-toggle">
+ 
+            <label for="menu-toggle" class="menu-icon">
+                <i class="bi bi-list"></i>
+            </label>
+ 
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pedidos.html">Menu</a></li>
+                <li><a href="pagamento.html">Pagamento</a></li>
+            </ul>
+        </nav>
+         
+        <div class="linha-menu">
+            <span class="linha-esq"></span>
+            <img src="./img personalizacao/logo-ateatampa.png" class="logo-menu">
+            <span class="linha-dir"></span>
+        </div>
+
+    </header>
+
+    <main>
+ 
+        <h1 class="titulo">Personalização</h1>
+ 
+        <!-- Linha 1 -->
+        <div class="box">
+            <div class="item">
+                <label>Pote:</label>
+                <input type="radio" value="Pote" name="tipo">
+            </div>
+            <div class="item">
+                <label>Festa:</label>
+                <input type="radio" value="Festa" name="tipo">
+            </div>
+        </div>
+ 
+        <!-- Linha 2 -->
+        <div class="box-2">
+            <div class="item">
+                <label>Peso (em Kg):</label>
+                <input type="text" class="peso">
+            </div>
+ 
+            <div class="item">
+                <label>Redondo:</label>
+                <input type="radio" value="Redondo" name="formato">
+            </div>
+ 
+            <div class="item">
+                <label>Quadrado:</label>
+                <input type="radio" value="Quadrado" name="formato">
+            </div>
+        </div>
+ 
+        <!-- Sabores -->
+        <div class="box sabores">
+            <div>
+                <label>Brigadeiro</label>
+                <input type="radio" value="Brigadeiro" name="box-sabores">
+            </div>
+            <div>
+                <label>Limão</label>
+                <input type="radio" value="Limão" name="box-sabores">
+            </div>
+            <div>
+                <label>Maracujá</label>
+                <input type="radio" value="Maracujá" name="box-sabores">
+            </div>
+            <div>
+                <label>Prestígio</label>
+                <input type="radio" value="Prestígio" name="box-sabores">
+            </div>
+            <div>
+                <label>Morango com Ninho</label>
+                <input type="radio" value="Morango com Ninho" name="box-sabores">
+            </div>
+            <div>
+                <label>Ninho Puro</label>
+                <input type="radio" value="Ninho Puro" name="box-sabores">
+            </div>
+        </div>
+ 
+        <button class="btn">Concluir pedido</button>
+ 
+    </main>
+ 
+    <footer>
+        <div class="content">
+            <div class="logo">
+                <img src="./img personalizacao/logo-ateatampa.png" alt="Logo Até a Tampa">
+            </div>
+                
+                
+            <div class="e-mail">
+                <p><strong>E-mail:</strong><br>contatoateatampa@gmail.com</p>
+                </div>
+            <div class="number">
+                <p><strong>Contato:</strong><br>(11)97717-8338</p>
+            </div>
+            <div class="socials">
+                <p><strong>Instagram:</strong><br>@ate_a_tampa</p>
+            </div>
+            <div class="icons">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    
+            </div>
+        </div>
+    </footer>
+<script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    });
+</script>
+ 
+</body>
+</html>
+ 
