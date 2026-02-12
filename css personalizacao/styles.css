@@ -3,7 +3,7 @@
 :root {
     --roxo-claro: #6D76A6;
     --roxo-escuro: #1b1f5e;
-    ---bege: #d9bd8b; 
+    --bege: #d9bd8b; 
     --roxo: #732257;
 }
 * {
@@ -13,10 +13,14 @@
 }
  
 body {
-    background-color: var(---bege);
+    background-color: var(--bege);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 .navbar {
@@ -167,7 +171,7 @@ footer .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(---bege);
+    color: var(--bege);
     gap: 20px;
     font-size: 19px;
 }
@@ -183,7 +187,7 @@ footer .icons {
 }
 
 footer .icons a {
-    color: var(---bege);
+    color: var(--bege);
 }
  
 /* --- RESPONSIVIDADE --- */
@@ -199,7 +203,7 @@ footer .icons a {
         top: 70px;
         left: 0;
         width: 100%;
-        background-color: #d9bd8d;
+        background-color: var(--bege);
         flex-direction: column;
         align-items: center;
         padding: 20px 0;
